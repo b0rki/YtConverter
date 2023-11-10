@@ -28,12 +28,26 @@
       <div class="success">
         <p> <%= song_title %> </p>
         <a href="<%= song_link %>"><button id="download-btn">DOWNLOAD</button></a>
+        <a class="convert-next" href="/">Convert next</a>
       </div>
     <% } else if (typeof success != "undefined" && !success) { %>
       <div class="errors">
         <p> <%= message %> </p>
       </div>
     <% } %>
+
+    <div class="info">
+      <h1>How to convert </h1>
+      <p>"Easily convert any YouTube video to MP3 using my advanced online YouTube converter. This tool is designed and optimized to be used on any mobile, tablet and computer device. "
+        <br>
+        <br>
+        "This online converter does not convert videos length longer than 2 hours (7200 sec). The advantage of this limitation is that my tool is not overloaded. It takes only 5-20 seconds to convert 5 minutes of video. "
+        <br>
+        <br>
+        "To use this app, copy the youtube video id in the url just after the ? mark like this - https://www.youtube.com/watch?v="
+        <span class="youtubeid"> dQw4w9WgXcQ</span>
+      </p>
+    </div>
   </div>
 
 </body>

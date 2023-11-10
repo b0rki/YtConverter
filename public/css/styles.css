@@ -7,7 +7,8 @@
 
 body{
   color: white;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -21,9 +22,27 @@ body{
   justify-content: center;
   align-items: start;
   padding-top: 30px;
-  height: 55vh;
-  background-color: rgb(5, 15, 71) ;
+  height: 80vh;
+  background-color: rgb(56, 57, 59) ;
 }
+
+.info{
+  background: rgb(30, 29, 29);
+  height: 50%;
+  width: 40%;
+  box-shadow: 2px 2px 5px gray;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 100px;
+  }
+  
 
 #form{
   width: 600px;
@@ -74,7 +93,6 @@ body{
 
 .errors{
   width: 400px;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -85,19 +103,24 @@ body{
   color: red;
   background-color: #ffe6e6;
   border: 1px solid red;
+  position: absolute;
+  z-index: 10;
 }
 
 .success{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   color: white;
+  position: absolute;
+  z-index: 10;
+  margin: -10px;
 }
 
 #download-btn{
   width: fit-content;
+  height: 45px;
   color: white;
   padding: 12px;
   color: black;
@@ -118,6 +141,35 @@ body{
   background-color:  rgb(30, 29, 29);
   border: 1px solid  lightgray;
   transform: scale(1.1);
+}
+
+.convert-next{
+  width: fit-content;
+  color: white;
+  padding: 12px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px gray;
+  font-style: normal;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: inherit;
+  border: 1px solid rgb(67, 66, 66);
+  transition: 0.3s ease-out;
+}
+
+.convert-next:hover{
+  color:white;
+  background-color:  rgb(30, 29, 29);
+  border: 1px solid  lightgray;
+  transform: scale(1.1);
+}
+
+.youtubeid{
+  color: rgb(80, 12, 12);
+  text-decoration: underline;
 }
 
 @media(max-width:768px){
